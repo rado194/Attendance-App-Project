@@ -1,0 +1,42 @@
+<form class="" action="/courses/<%= @course.course_id %>" method="post">
+  <a class="btn btn-primary text-white" href="/students/new">Add Student</a>
+  <% if @course.course_id != '1' %>
+    <input class="btn btn-primary text-white" type="hidden" name="_method" value="delete">
+    <input class="btn btn-primary text-white" type="submit" value="Remove Course">
+  <% end %>
+</form>
+<hr>
+
+<div class="main-content">
+  <h2 class="group-title"><%= @course.name %> Register</h2>
+
+  <div class="form-heading">
+    <p id="name-col">Name</p>
+    <p id="date-col">Date</p>
+    <p id="att-col">Attendance Status</p>
+    <p id="description-col">Comments</p>
+  </div>
+
+  <% @course_attendance.each do |student_status|%>
+  <form action="/courses/<%= @course.course_id %>" method="post" class="student-attendance-display">
+
+    <div class="form-group student-form">
+      <input type="hidden" name="student_id" value="<%= student_status.student_id %>">
+      <p class="student-name" name="name"><a href="/students/<%= student_status.student_id%>"><%= student_status.first_name %> <%= student_status.last_name %></a></p>
+      <div class="form-group ml-2 mt-3">
+        <input type="date" name="attendance_date" value="<%= Date.today.to_s %>">
+      </div>
+      <select class="form-control" name="status" id="exampleFormControlSelect2">
+        <option>On Time</option>
+        <option>Slightly late(5 minutes)</option>
+        <option>Very late(over 30 minutes)</option>
+        <option>Absent</option>
+        <option>Authorized Absence</option>
+      </select>
+        <textarea class="form-control" name="description"></textarea>
+      <input type="submit" value="Save Attendance">
+    </div>
+  </form>
+  <% end %>
+
+</div>

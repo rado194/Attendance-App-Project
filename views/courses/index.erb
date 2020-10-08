@@ -1,0 +1,26 @@
+
+<div class="form-row">
+  <div class="card-header col-12 text-center" >
+    <b>Current Courses</b>
+  </div>
+    <% @courses.each do |course| %>
+    <div class="card col-4 text-center" style="width: 18rem;">
+      <div class="card-body">
+        <h4 class="card-title"><%= course.name %></h4>
+        <h5 class="card-text"><%= course.course_type %></h5>
+        <h5 class="card-text">Start Date:<%= course.start_date %></h5>
+        <h5 class="card-text">End Date: <%= course.end_date %></h5>
+
+        <a href="/courses/<%= course.course_id %>" class="btn btn-primary text-white"  >View Register</a>
+        <br>
+        <br>
+        <hr>
+
+      </div>
+    </div>
+    <% end %>
+
+</div>
+<div class="footer breaks">
+  <br><br><br>
+</div>

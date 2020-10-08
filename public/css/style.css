@@ -1,0 +1,154 @@
+a {
+  color: slategrey;
+}
+
+#footer {
+  background-color: #B0C4DE;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+
+}
+
+body {
+  margin-bottom: 20px;
+}
+
+.searchbar {
+  width: 300px;
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
+.group-title {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.buttons button {
+  width: 20%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: red;
+  font-weight: bold;
+  color: black;
+}
+
+.buttons button:hover{
+  background-color: firebrick;
+}
+
+.form-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 0;
+  background-color: lightblue;
+  font-weight: bold;
+  border-radius: 5px;
+  border: solid 2px black;
+  padding-top: 10px;
+}
+
+#description-col {
+  padding-left: 50px;
+}
+
+.form heading comments {
+  padding-left: 10px;
+}
+
+#name-col, #date-col {
+  width: 10%;
+  text-align: center;
+}
+
+#att-col {
+  width: 30%;
+  text-align: center;
+}
+
+#description-col {
+  width: 45%;
+}
+
+.student-attendance-display {
+  margin-bottom: 20px;
+  min-height: 60px;
+  max-height: 100px;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+.student-form {
+  width: 100%;
+  margin-bottom: 0;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.student-form p, .student-form select, .student-form textarea {
+  display: inline;
+  align-self: center;
+}
+
+.student-form p {
+  width: 10%;
+  margin: 0;
+}
+
+.student-name {
+  font-weight: bold;
+}
+
+.student-form select {
+  width: 24%;
+  margin-left: 10px;
+}
+
+.student-form textarea {
+  width: 30%;
+  height: 40px;
+  max-height: 80px;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.student-form input[type='submit']{
+  width: 18%;
+  height: 40px;
+  align-self: center;
+  margin-right: 2%;
+  background-color: limegreen;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.student-form input[type='submit']:hover{
+  background-color: darkgreen;
+  color: white;
+}
+
+#navbarDropDown {
+  display: inline-block;
+}

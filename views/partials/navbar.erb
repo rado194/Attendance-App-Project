@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar" style="background-color:#B0C4DE;">
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse" id="navbarNav">
+   <ul class="navbar-nav">
+     <li class="nav-item active">
+       <a class="btn " href="/">Home <span class="sr-only">(current)</span></a>
+       <div class="dropdown" id="navbarDropDown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Students
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="/students">View Students</a>
+            <a class="dropdown-item" href="/students/new">Add Students</a>
+          </div>
+        </div>
+       <div class="dropdown" id="navbarDropDown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Courses
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="/courses">View Courses</a>
+            <a class="dropdown-item" href="/courses/new">Add Course</a>
+          </div>
+        </div>
+     </li>
+   </ul>
+   <div class="input-group mb-3 col-4 mt-2 ml-5">
+       <form action="/search" method="post">
+         <div class="form-row ">
+           <div class="col-8 ">
+             <input type="text" class = "searchbar" name="searchBar" class="form-control-md" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+           </input>
+           </div>
+           <div class="ml-5">
+             <button class="btn-md btn-secondary" type="submit" id="button-addon2">Search</button>
+           </div>
+     </div>
+     </form>
+
+
+   </div>
+ </div>
+
+
+<br>

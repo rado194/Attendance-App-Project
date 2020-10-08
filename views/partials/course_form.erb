@@ -1,0 +1,35 @@
+<form class="" action="/courses/<%= @course.course_id %>" method="post">
+
+  <% if @course.course_id %>
+		<input type="hidden" name="_method" value="put">
+	<% end %>
+  <hr>
+  <div class="form-group col-sm-3">
+    <label>Course</label>
+    <input class="form-control" type="text" name="name" value="<%= @course.name %>" placeholder="Course">
+  </div>
+  <div class="form-group col-sm-3">
+    <label>Stream</label>
+    <select class="custom-select" id="inputGroupSelect01" name="course_type">
+      <option value="Business">Business</option>
+      <option selected value="Engineering">Engineering</option>
+      <option value="Data">Data</option>
+    </select>
+  </div>
+  <div class="form-row pl-3">
+    <div class="form-group col-sm-2.5">
+      <label>Start Date</label>
+      <input class="form-control" type="date" name="start_date" value="<%= @course.start_date %>" placeholder="yy/mm/dd">
+    </div>
+    <div class="form-group col-sm-2.5">
+      <label>End Date</label>
+      <input class="form-control" type="date" name="end_date" value="<%= @course.end_date %>" placeholder="yy/mm/dd">
+    </div>
+
+  </div>
+
+  <hr>
+  <div class="form-group pl-3">
+    <input class="btn btn-primary" type="submit" name="" value="Submit">
+  </div>
+</form>
