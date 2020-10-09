@@ -8,4 +8,5 @@ The team approached the project with the MVC pattern and Agile and Scrum methods
 
 
 Radoslav contributed with creating some of the controllers, styling of the website and the functionality on some of the pages. 
+
 Technologies Used: Ruby on rails, GitHub, Agile, Scrum, JavaScript, CSS, Sinatra
